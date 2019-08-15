@@ -70,3 +70,5 @@ The EHRI Search API returns paginated responses of up to 20 items at a time. For
 
 ## [Task 1: Fetching names and addresses of archival institutions](./task1.md)
 
+## [Task 2: Fetching the English-language title and "Scope and Content" fields for Yad Vashem descriptions matching the word "Terezin"](./task2.md)
+

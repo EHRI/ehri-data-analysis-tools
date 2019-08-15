@@ -24,8 +24,10 @@ In Jq we normally accept data via [standard input](https://en.wikipedia.org/wiki
 our CuRL output using a pipe (|):
 
 ```bash
-curl https://portal.ehri-project.eu/api/v1 | jq
+curl https://portal.ehri-project.eu/api/v1 | jq .
 ```
+
+(Note: the period '.' argument to Jq is the simplest possible filter program, which simply returns the JSON structurally unchanged.)
 
 This should give us output that's much easier to read:
 
@@ -60,7 +62,7 @@ However, we only want one type of item (archival institutions) so, as explained 
 need to use the `type=Repository` parameter on our API request:
 
 ```bash
-curl https://portal.ehri-project.eu/api/v1/search?type=Repository | jq
+curl https://portal.ehri-project.eu/api/v1/search?type=Repository | jq .
 ```
 
 This should give us lots of data which should look, in abreviated form, like this:
@@ -177,7 +179,7 @@ descriptions contain a lot of text.
 So let's specify that we only want those two fields:
 
 ```bash
-curl "https://portal.ehri-project.eu/api/v1/search?type=Repository&fields[Repository]=name,address" | jq
+curl "https://portal.ehri-project.eu/api/v1/search?type=Repository&fields[Repository]=name,address" | jq .
 ```
 
 (Note that we've now put quotes around the CuRL URL. This will avoid problems with parts of the URL

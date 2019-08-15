@@ -1,5 +1,5 @@
 Using spatial data in Tableau
-#############################
+=============================
 
 Tableau is a powerful digital tool for analysing data. In this short
 guide we will focus on one particular aspect of data analysis using

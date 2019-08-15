@@ -517,10 +517,9 @@ just need to use another pipe
 
 ```bash
 curl https://portal.ehri-project.eu/api/v1/search?type=Repository \
-         | jq -r '
-                .data[] 
-                    | [ "https://portal.ehri-project.eu/institutions/" + .id,
-                      .attributes.name ] | @csv'
+         | jq -r '.data[] 
+                    | [ "https://portal.ehri-project.eu/institutions/" + .id, .attributes.name ] 
+                    | @csv'
 ```
 
 Voilà:
@@ -559,10 +558,11 @@ curl https://portal.ehri-project.eu/api/v1/search?type=Repository \
          | jq -r '
                 .data[] 
                     | [ "https://portal.ehri-project.eu/institutions/" + .id,
-                      .attributes.name,
-                      .attributes.address.streetAddress,
-                      .attributes.address.city,
-                      .attributes.address.postalCode ] | @csv'
+                          .attributes.name,
+                          .attributes.address.streetAddress,
+                          .attributes.address.city,
+                          .attributes.address.postalCode ]
+                    | @csv'
 ```
    
 ```csv
@@ -597,10 +597,11 @@ curl https://portal.ehri-project.eu/api/v1/search?type=Repository \
          | jq -r '
                 .data[] 
                     | [ "https://portal.ehri-project.eu/institutions/" + .id,
-                      .attributes.name,
-                      .attributes.address.streetAddress,
-                      .attributes.address.city,
-                      .attributes.address.postalCode ] | @csv' > institution-data-page-1.csv
+                          .attributes.name,
+                          .attributes.address.streetAddress,
+                          .attributes.address.city,
+                          .attributes.address.postalCode ] 
+                    | @csv' > institution-data-page-1.csv
 ```
 Note the arrow `>` and the name of our csv file (institution-data-page-1.csv).
 
@@ -622,10 +623,11 @@ for page in $(seq 1 109); do
              | jq -r '
                     .data[] 
                         | [ "https://portal.ehri-project.eu/institutions/" + .id,
-                          .attributes.name,
-                          .attributes.address.streetAddress,
-                          .attributes.address.city,
-                          .attributes.address.postalCode ] | @csv' > institution-data-page-${page}.csv    
+                              .attributes.name,
+                              .attributes.address.streetAddress,
+                              .attributes.address.city,
+                              .attributes.address.postalCode ] 
+                        | @csv' > institution-data-page-${page}.csv    
 done
 ```
 
@@ -641,10 +643,11 @@ for page in $(seq 1 109); do
              | jq -r '
                     .data[] 
                         | [ "https://portal.ehri-project.eu/institutions/" + .id,
-                          .attributes.name,
-                          .attributes.address.streetAddress,
-                          .attributes.address.city,
-                          .attributes.address.postalCode ] | @csv' >> institution-data.csv    
+                              .attributes.name,
+                              .attributes.address.streetAddress,
+                              .attributes.address.city,
+                              .attributes.address.postalCode ] 
+                        | @csv' >> institution-data.csv    
 done
 ```
 

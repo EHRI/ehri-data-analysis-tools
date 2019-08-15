@@ -20,7 +20,8 @@ When you first start using Zotero, the standalone version will be empty
 of references. It is possible to import references from other database
 sources, or to input your collections manually, or add items from the
 web. Your collections can be sorted into different folders to help you
-find your data. For more information on how to do this click *here*.
+find your data. For more information on how to do this click 
+[here](https://www.zotero.org/support/adding_items_to_zotero#importing_from_other_tools).
 
 One advantage to using Zotero, particularly in the digital humanities or
 in Holocaust research, is that you can capture webpages into your

@@ -1,0 +1,9 @@
+beautifulsoup4==4.11.1
+gensim==4.1.2
+nltk==3.7
+numpy==1.21.6
+pandas
+pipreqs==0.4.11
+pyLDAvis==3.3.1
+requests==2.27.1
+spacy==3.3.0

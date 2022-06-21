@@ -1,7 +1,7 @@
-# Exploratory Topic Modelling Using Python
+# Exploratory Topic Modelling in Python
 ##### by Mike Bryant and Maria Dermentzi 
 
-This notebook aims to walk readers through the process of topic modelling in Python and accompanies the article (to be) published in the European Holocaust Research Infrastructure (EHRI) Document Blog entitled "Exploratory Topic Modelling Using Python".
+This notebook aims to walk readers through the process of topic modelling in Python and accompanies the article (to be) published in the European Holocaust Research Infrastructure (EHRI) Document Blog entitled "Exploratory Topic Modelling in Python".
 
 #### Credits:
 The transcripts that form the corpus in this tutorial were obtained through the [United States Holocaust Memorial Museum](https://www.ushmm.org/) (USHMM).
@@ -18,7 +18,7 @@ Since there is not yet a ready-to-download dataset that includes these transcrip
 
 #### How to access the datasets outside the Jupyter Notebook
 The datasets produced through this tutorial are available on Zenodo:
-https://doi.org/10.5281/zenodo.6670234
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6670234.svg)](https://doi.org/10.5281/zenodo.6670234)
 
 ## How to use
 You can either dowload the repository and run the Jupyter notebook on your local device (you might need to install any libraries that are not already installed in your device - see [requirements.txt](/requirements.txt)), run it on Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdermentzi/ehri-topic-modelling-guide/HEAD?labpath=USHMM_Oral_Testimonies_Topic_Modelling.ipynb), or simply click on the [USHMM_Oral_Testimonies_Topic_Modelling.ipynb](/USHMM_Oral_Testimonies_Topic_Modelling.ipynb) file on Github.
@@ -41,7 +41,7 @@ Lau, J. H., Newman, D., & Baldwin, T. (2014). Machine Reading Tea Leaves: Automa
 
 Martin, F., & Johnson, M. (2015). More Efficient Topic Modelling Through a Noun Only Approach. Proceedings of the Australasian Language Technology Association Workshop 2015, 111–115. https://aclanthology.org/U15-1013
 
-Mattingly, W. J. B. (2021, February 23). What is Laten Dirichlet Allocation LDA (Topic Modeling for Digital Humanities 03.01). https://www.youtube.com/watch?v=o7OqhzMcDfs
+Mattingly, W. J. B. (2021, February 23). What is Latent Dirichlet Allocation LDA (Topic Modeling for Digital Humanities 03.01). https://www.youtube.com/watch?v=o7OqhzMcDfs
 
 Mattingly, W. J. B. (2022). Implementing LDA in Python—Introduction to Python for Humanists. In Introduction to Python for Digital Humanities. https://python-textbook.pythonhumanities.com/04_topic_modeling/03_03_lda_model_demo.html
 
@@ -68,7 +68,7 @@ United States Holocaust Memorial Museum. (2007). Oral History Interview Guidelin
 ## Further Reading/Resources
 
 #### Tutorials:
-Mattingly, W. J. B. (2021, February 23). What is Laten Dirichlet Allocation LDA (Topic Modeling for Digital Humanities 03.01). https://www.youtube.com/watch?v=o7OqhzMcDfs
+Mattingly, W. J. B. (2021, February 23). What is Latent Dirichlet Allocation LDA (Topic Modeling for Digital Humanities 03.01). https://www.youtube.com/watch?v=o7OqhzMcDfs
 
 Mattingly, W. J. B. (2022). Implementing LDA in Python—Introduction to Python for Humanists. In Introduction to Python for Digital Humanities. https://python-textbook.pythonhumanities.com/04_topic_modeling/03_03_lda_model_demo.html
 
